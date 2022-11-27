@@ -1,0 +1,50 @@
+// footer
+
+.footer-wrapper {
+  display: flex;
+  align-items: baseline;
+}
+
+.navigation__map {
+  display: inline-block;
+
+  margin-top: 30px;
+  margin-bottom: 0;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+
+  color: #ffffff;
+  text-decoration: none;
+
+  transition: var(--transform-color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.navigation__auth {
+  display: inline-block;
+
+  margin-top: 10px;
+  margin-bottom: 0;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+
+  transition: var(--transform-color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}

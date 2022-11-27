@@ -1,0 +1,44 @@
+.container-join {
+    margin-left: 70px;
+}
+
+.text-join {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    padding-bottom: 20px;
+
+    color: #ffffff;
+}
+
+.join-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+
+    transition: var(--transform-bg-color);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
+}
+
+.join-list {
+    display: flex;
+    gap: 10px;
+}
+
+.join-icon {
+    fill: #fff;
+}

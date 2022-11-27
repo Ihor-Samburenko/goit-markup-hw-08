@@ -1,0 +1,38 @@
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.socials__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+
+    border-radius: 50%;
+
+    transition: var(--transform-bg-color);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
+
+    &:hover .socials__icon,
+    &:focus .socials__icon {
+        fill: #fff;
+    }
+    
+
+}
+
+.socials__icon {
+    fill: #afb1b8;
+    transition: var(--transform-fill-color);
+
+}
+
