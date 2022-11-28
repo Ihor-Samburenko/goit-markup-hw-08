@@ -3,7 +3,6 @@
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
-  width: 696px;
 
   color: var(--main-text-color);
   //   min-width: 696px;
@@ -16,11 +15,11 @@
   @media screen and (max-width: 480px) {
     font-size: 26px;
     line-height: 1.62;
-    width: 480px;
-    margin: 0;
+    max-width: 360px;
   }
-  @media screen and (max-width: 768px) {
-    margin-bottom: 40px;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 696px;
   }
 }
 
