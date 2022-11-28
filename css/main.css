@@ -454,13 +454,9 @@ textarea {
 }
 @media screen and (max-width: 1199px) {
   .section-title {
-    margin-bottom: 30px;
-  }
-}
-@media screen and (max-width: 1199px) {
-  .section-title {
     font-size: 28px;
     line-height: 1.17;
+    margin-bottom: 30px;
   }
 }
 
@@ -678,6 +674,15 @@ textarea {
 }
 
 /* about */
+.examples {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .examples {
+    display: block;
+  }
+}
+
 .about {
   display: flex;
 }
