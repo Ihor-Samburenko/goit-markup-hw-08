@@ -782,6 +782,9 @@ textarea {
 .features {
   gap: 30px;
 }
+.features:not(last-child) {
+  margin-bottom: 32px;
+}
 @media screen and (min-width: 480px) {
   .features {
     display: flex;
@@ -842,11 +845,6 @@ textarea {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-}
-@media screen and (min-width: 320px) and (max-width: 1199px) {
-  .features__text {
-    margin-bottom: 30px;
-  }
 }
 
 footer {
