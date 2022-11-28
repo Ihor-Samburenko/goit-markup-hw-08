@@ -1,37 +1,53 @@
 .input-wrapper {
+  @media screen and (min-width: 1200px) {
     display: flex;
+    gap: 12px;
+  }
 }
 
 .input-join {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-top: 60px;
+  }
+  @media screen and (min-width: 1200px) {
     margin-left: 93px;
+  }
 }
 
 .join-input {
-    width: 358px;
-    height: 50px;
+  width: 358px;
+  height: 50px;
 
-    padding: 15px 16px;
+  padding: 15px 16px;
 
-    background-color: transparent;
+  background-color: transparent;
 
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    color: #fff;
-    outline: 1px solid transparent;
-    outline-offset: -1px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: #fff;
+  outline: 1px solid transparent;
+  outline-offset: -1px;
+
+  @media screen and (max-width: 767px) {
+    width: 450px;
+  }
 }
 
 .text-input-join {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
 
-    letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
 
-    text-transform: uppercase;
+  text-transform: uppercase;
 
-    color: #ffffff;
+  color: #ffffff;
+
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+  }
 }

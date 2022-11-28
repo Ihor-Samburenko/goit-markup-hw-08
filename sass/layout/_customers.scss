@@ -1,38 +1,53 @@
 /* Постійні клієнти */
 
 .customers {
+  @media screen and (min-width: 480px) {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
+    flex-wrap: wrap;
+  }
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 
 .customers__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    width: 170px;
-    height: 92px;
+  width: 170px;
+  height: 92px;
 
-    color: #afb1b8;
+  color: #afb1b8;
 
-    border: 1px solid #afb1b8;
-    border-radius: 4px;
-    transition: var(--transform-color);
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition: var(--transform-color);
 
-    &:hover,
-    &:focus {
-        color: var(--accent-color);
-        border-color: var(--accent-color);
-    }
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+
+  @media screen and (min-width: 480px) {
+    min-width: 210px;
+    // flex-basis: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: 768px) {
+    min-width: 226px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 170px;
+  }
 }
 
 .customers__link {
-    fill: #afb1b8;
+  fill: #afb1b8;
 }
-
 
 .customers__icon {
-    fill: currentColor;
+  fill: currentColor;
 }

@@ -54,6 +54,12 @@
             </a>
           </li>
         </ul>
+
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="menu-toggle__icon" width="24" height="24">
+            <use href="./images/symbol-defs.svg#Logo5"></use>
+          </svg>
+        </button>
       </div>
     </header> -->
 
@@ -70,7 +76,7 @@
       </section> -->
 
       <!--Основні переваги-->
-      <section class="section benefits">
+      <!-- <section class="section benefits">
         <div class="container">
           <h2 class="visually-hidden">Наші основні переваги</h2>
 
@@ -121,7 +127,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!--чим займається компанія-->
       <!-- <section class="section">
@@ -157,12 +163,26 @@
       </section> -->
 
       <!--члени команди-->
-      <!-- <section class="section members">
+      <section class="section members">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="team">
             <li class="team__item">
-              <img src="./images/img-3.jpg" alt="Людина в окулярах" width="270" />
+              <picture>
+                <source
+                  srcset="images/w/img_270.jpg 1x, images/w/img_540.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="images/w/img_354.jpg 1x, images/w/img_708.jpg 2x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="images/w/img_450.jpg 1x, images/w/img_900.jpg 2x"
+                  media="(min-width:320px)"
+                />
+                <img src="./images/w/img_270.jpg" alt="Ігор Дем'яненко" />
+              </picture>
               <h3 class="team__title">Ігор Дем'яненко</h3>
               <p class="team__subtitle">Product Designer</p>
               <ul class="socials">
@@ -222,7 +242,21 @@
             </li>
 
             <li class="team__item">
-              <img src="./images/img-4.jpg" alt="Жінка в окулярах" width="270" />
+              <picture>
+                <source
+                  srcset="images/w/img_270-1.jpg 1x, images/w/img_540-1.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="images/w/img_354-1.jpg 1x, images/w/img_708-1.jpg 2x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="images/w/img_450-1.jpg 1x, images/w/img_900-1.jpg 2x"
+                  media="(min-width:320px)"
+                />
+                <img src="./images/w/img_270-1.jpg" alt="Ольга Рєпіна" />
+              </picture>
               <h3 class="team__title">Ольга Рєпіна</h3>
               <p class="team__subtitle">Frontend Developer</p>
               <ul class="socials">
@@ -281,7 +315,21 @@
               </ul>
             </li>
             <li class="team__item">
-              <img src="./images/img-5.jpg" alt="чоловік в синій сорочці" width="270" />
+              <picture>
+                <source
+                  srcset="images/w/img_270-2.jpg 1x, images/w/img_540-2.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="images/w/img_354-2.jpg 1x, images/w/img_708-2.jpg 2x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="images/w/img_450-2.jpg 1x, images/w/img_900-2.jpg 2x"
+                  media="(min-width:320px)"
+                />
+                <img src="./images/w/img_270-2.jpg" alt="Ігор Дем'яненко" />
+              </picture>
               <h3 class="team__title">Микола Тарасов</h3>
               <p class="team__subtitle">Marketing</p>
               <ul class="socials">
@@ -340,7 +388,21 @@
               </ul>
             </li>
             <li class="team__item">
-              <img src="./images/img-6.jpg" alt="чоловік в чорній футболці" width="270" />
+              <picture>
+                <source
+                  srcset="images/w/img_270-3.jpg 1x, images/w/img_540-3.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="images/w/img_354-3.jpg 1x, images/w/img_708-3.jpg 2x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="images/w/img_450-3.jpg 1x, images/w/img_900-3.jpg 2x"
+                  media="(min-width:320px)"
+                />
+                <img src="./images/w/img_270-3.jpg" alt="Михайло Єрмаков" />
+              </picture>
               <h3 class="team__title">Михайло Єрмаков</h3>
               <p class="team__subtitle">UI Designer</p>
               <ul class="socials">
@@ -400,7 +462,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Постійні клієнти -->
       <!-- <section class="section customers">
@@ -557,6 +619,7 @@
       </div>
     </footer> -->
 
+    <!-- Modal window -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="close-btn" data-modal-close type="button">
@@ -617,6 +680,56 @@
       </div>
     </div>
 
+    <!-- Mobile menu -->
+    <!-- <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="menu-toggle__icon" width="24" height="24">
+          <use href="./images/symbol-defs.svg#iconcross"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu list">
+        <li class="mobile-menu-item">
+          <a href="" class="mobile-menu-link current">Студія</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="" class="mobile-menu-link">Портфоліо</a>
+        </li>
+        <li>
+          <a href="" class="mobile-menu-link">Контакти</a>
+        </li>
+      </ul>
+      <ul class="mobile-contacts list">
+        <li class="mobile-contacts-item">
+          <a href="" class="mobile-contacts-link accent">+38 096 111 11 11</a>
+        </li>
+        <li class="mobile-contacts-item">
+          <a href="" class="mobile-contacts-link">info@devstudio.com</a>
+        </li>
+      </ul>
+      <ul class="mobile-socials list">
+        <li class="mobile-socials-item">
+          <a href="" class="mobile-socials-link link">Instagram</a>
+        </li>
+        <li class="mobile-socials-item">
+          <a href="" class="mobile-socials-link link">Twitter</a>
+        </li>
+        <li class="mobile-socials-item">
+          <a href="" class="mobile-socials-link link">Facebook</a>
+        </li>
+        <li class="mobile-socials-item">
+          <a href="" class="mobile-socials-link link">LinkedIn</a>
+        </li>
+      </ul>
+    </div> -->
+
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

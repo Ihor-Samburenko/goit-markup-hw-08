@@ -1,14 +1,22 @@
 // footer
 
 .footer-wrapper {
-  display: flex;
-  align-items: baseline;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
 
 .navigation__map {
   display: inline-block;
 
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 0;
 
   font-style: normal;
@@ -29,8 +37,7 @@
 
 .navigation__auth {
   display: inline-block;
-
-  margin-top: 10px;
+  margin-top: 9px;
   margin-bottom: 0;
 
   font-style: normal;
@@ -46,5 +53,9 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+
+  @media screen and (max-width: 1199px) {
+    margin-top: 8px;
   }
 }
